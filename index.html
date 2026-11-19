@@ -1,0 +1,529 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Princess Palace</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- PHASE 10: ROYAL INTRO SCREEN -->
+
+<div id="royalIntro" class="royal-intro">
+
+    <div class="intro-particles"></div>
+
+    <div class="intro-content">
+
+        <div class="intro-crown">♛</div>
+
+        <p class="intro-subtitle">
+            A MAGICAL WORLD AWAITS
+        </p>
+
+        <h1>
+            The Princess
+            <span>Palace</span>
+        </h1>
+
+        <div class="intro-divider">
+            <span>✦</span>
+        </div>
+
+        <p class="intro-description">
+            Where dreams become beautiful memories.
+        </p>
+
+        <button id="startJourneyButton" class="intro-button">
+            Begin Your Journey ✨
+        </button>
+
+    </div>
+
+    <button id="skipIntroButton" class="skip-intro">
+        Skip Intro →
+    </button>
+
+</div>
+
+    <!-- PHASE 9 — ROYAL NAVIGATION -->
+
+<nav class="royal-nav">
+
+    <a href="#" class="nav-logo" data-page="welcomeSection">
+        ♛ Princess Palace
+    </a>
+
+    <div class="nav-links">
+
+        <button data-page="welcomeSection">Home</button>
+
+        <button data-page="gallerySection">Gallery</button>
+
+        <button data-page="gardenSection">Garden</button>
+
+        <button data-page="wishSection">Wishes</button>
+
+        <button data-page="surpriseSection">Surprise</button>
+
+        <button data-page="musicSection">Music</button>
+
+<button data-page="cameraSection">Crown Camera</button>
+
+
+        <button data-page="skySection">Night Sky</button>
+
+    </div>
+
+</nav>
+
+    <div id="palaceCanvas"></div>
+    <div class="overlay"></div>
+
+    <header class="navbar">
+        <div class="logo">✦ ROYAL DREAMS</div>
+        <div class="nav-label">A Magical Experience</div>
+    </header>
+
+    <main class="hero">
+
+        <div class="crown">♕</div>
+
+        <p class="eyebrow">A WORLD MADE JUST FOR YOU</p>
+
+        <h1>
+            Welcome to the
+            <span>Princess Palace</span>
+        </h1>
+
+        <p class="description">
+            Beyond these doors lies a magical world filled
+            with beautiful memories, dreams and surprises.
+        </p>
+
+        <button id="enterButton" class="enter-button">
+            Enter the Palace <span>→</span>
+        </button>
+
+        <p class="small-note">Your magical journey begins here</p>
+
+    </main>
+
+    <section id="welcomeSection" class="welcome-section">
+        <div class="welcome-card">
+
+            <div class="card-crown">♕</div>
+
+            <p class="eyebrow">WELCOME, YOUR HIGHNESS</p>
+
+            <h2>Your Story Begins</h2>
+
+            <p>
+                Every princess deserves a world of her own.
+                This little palace is created to make your
+                experience magical and unforgettable.
+            </p>
+            
+<button id="galleryButton" class="gallery-button">
+    Explore the Royal Gallery ✦
+</button>
+
+            <button id="backButton" class="back-button">
+                Back to the beginning
+            </button>
+
+        </div>
+    </section>
+    
+<section id="gallerySection" class="gallery-section">
+
+    <div class="gallery-heading">
+        <p class="eyebrow">A COLLECTION OF BEAUTIFUL MOMENTS</p>
+
+        <h2>The Royal Gallery</h2>
+
+        <p class="gallery-description">
+            Every picture holds a special memory.
+            Welcome to your own little world.
+        </p>
+    </div>
+
+    <div class="gallery-grid">
+
+        <article class="memory-card">
+            <div class="photo-frame">
+                <img src="images/memory1.jpg"
+                     alt="First special memory">
+            </div>
+
+            <h3>Diva</h3>
+            <p>A memory worth keeping forever.</p>
+        </article>
+
+        <article class="memory-card">
+            <div class="photo-frame">
+                <img src="images/memory2.jpg"
+                     alt="Second special memory">
+            </div>
+
+            <h3>Golden Memories</h3>
+            <p>Little moments, beautiful memories.</p>
+        </article>
+
+        <article class="memory-card">
+            <div class="photo-frame">
+                <img src="images/memory3.jpg"
+                     alt="Third special memory">
+            </div>
+
+            <h3>My Princess</h3>
+            <p>No one can be as beautiful as you.</p>
+        </article>
+
+    </div>
+
+
+<button id="gardenButton" class="gallery-button">
+    Visit the Rose Garden 🌹
+</button>
+
+
+    <button id="galleryBackButton" class="back-button">
+        ← Back to Welcome
+    </button>
+
+</section>
+
+
+<!-- PHASE 4: ROYAL ROSE GARDEN -->
+
+<section id="gardenSection" class="garden-section">
+
+    <div class="garden-heading">
+
+        <p class="eyebrow">A SECRET WORLD OF BEAUTY</p>
+
+        <h2>The Royal Rose Garden</h2>
+
+        <p>
+            Walk through a magical garden filled with
+            roses, beautiful lights and peaceful dreams.
+        </p>
+
+    </div>
+
+    <div class="garden-scene">
+
+        <div id="gardenCanvas"></div>
+
+        <div class="garden-message">
+            <span>✦</span>
+            A little garden, a thousand dreams
+            <span>✦</span>
+        </div>
+
+    </div>
+
+    <div class="garden-actions">
+
+        <button id="bloomButton" class="garden-button">
+            Make the Garden Bloom 🌹
+        </button>
+       
+        <button id="wishButton" class="garden-button">
+            Make a Wish ✨
+        </button>
+
+        <button id="gardenBackButton" class="back-button">
+            ← Back to Gallery
+        </button>
+
+    </div>
+
+</section>
+
+<section id="wishSection" class="wish-section">
+
+    <div class="wish-heading">
+        <p class="eyebrow">A PLACE FOR DREAMS</p>
+        <h2>The Royal Wish Wall</h2>
+        <p>
+            Every dream begins with a wish.
+            Write yours and let it shine.
+        </p>
+    </div>
+
+    <div class="wish-container">
+
+        <div class="wish-input-area">
+            <span class="wish-star">✦</span>
+
+            <h3>Make Your Wish</h3>
+
+            <p>What does your heart wish for?</p>
+
+            <form id="wishForm">
+                <textarea
+                    id="wishInput"
+                    placeholder="Write your magical wish here..."
+                    maxlength="180"
+                    required
+                ></textarea>
+
+                <button type="submit" class="wish-submit">
+                    Send My Wish ✨
+                </button>
+            </form>
+        </div>
+
+        <div class="wishes-display">
+            <h3>Beautiful Wishes</h3>
+            <div id="wishList" class="wish-list"></div>
+        </div>
+
+    </div>
+
+    <button id="surpriseButton" class="garden-button">
+        Open Your Royal Surprise 🎁
+    </button>
+
+    <button id="wishBackButton" class="back-button">
+        ← Back to Rose Garden
+    </button>
+
+</section>
+<section id="surpriseSection" class="surprise-section">
+
+    <div class="surprise-heading">
+        <p class="eyebrow">A LITTLE MAGIC FOR YOU</p>
+        <h2>Your Royal Surprise</h2>
+        <p>Something special is waiting just for you.</p>
+    </div>
+
+    <div class="gift-container">
+
+        <div id="giftBox" class="gift-box" role="button"
+             tabindex="0" aria-label="Open the surprise gift">
+
+            <div class="gift-lid"></div>
+            <div class="gift-body">
+                <div class="gift-ribbon"></div>
+                <div class="gift-bow">🎀</div>
+            </div>
+
+        </div>
+
+        <p id="giftHint">Tap the gift to reveal your surprise ✨</p>
+
+        <div id="surpriseMessage" class="surprise-message">
+            <div class="surprise-icon">👑</div>
+            <h3>A Special Message</h3>
+
+            <p>
+                My princess you deserve all the happiness of this world,
+                you have an exquisite smile, don't ever lose it. May your 
+                all dreams come true and you always shine brighter than the stars.
+            </p>
+
+            <span>With warm wishes ✦</span>
+        </div>
+
+    </div>
+
+    <button id="musicButton" class="garden-button">
+        Enter the Royal Music Room 🎵
+    </button>
+
+    <button id="surpriseBackButton" class="back-button">
+        ← Back to Wish Wall
+    </button>
+
+</section>
+
+<section id="musicSection" class="music-section">
+
+    <div class="music-heading">
+        <p class="eyebrow">A WORLD OF MELODIES</p>
+        <h2>The Royal Music Room</h2>
+        <p>Let the music fill your royal world with magic.</p>
+    </div>
+
+    <div class="music-player">
+
+        <div class="music-art">
+            <div class="music-crown">♛</div>
+            <div class="music-note">♫</div>
+            <div class="music-stars">✦ ✧ ✦</div>
+        </div>
+
+        <div class="music-details">
+            <h3>Royal Dreams</h3>
+            <p>Palace Background Music</p>
+        </div>
+
+        <div class="music-controls">
+
+            <button id="playButton" class="play-button"
+                aria-label="Play music">
+                ▶
+            </button>
+
+            <button id="muteButton" class="mute-button"
+                aria-label="Mute music">
+                🔊
+            </button>
+
+        </div>
+
+        <div class="volume-control">
+            <label for="volumeSlider">Volume</label>
+            <input
+                type="range"
+                id="volumeSlider"
+                min="0"
+                max="1"
+                step="0.01"
+                value="0.5"
+            >
+            <span id="volumeValue">50%</span>
+        </div>
+
+        <p id="musicStatus" class="music-status">
+            Ready to play ✨
+        </p>
+
+    </div>
+
+    <audio id="royalAudio" loop>
+        <source src="audio/royal-ambience.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="skyButton" class="garden-button">
+        Enter the Royal Night Sky 🌙
+    </button>
+
+    <button id="musicBackButton" class="back-button">
+        ← Back to Surprise
+    </button>
+
+</section>
+
+<section id="skySection" class="sky-section">
+
+    <canvas id="skyCanvas"></canvas>
+
+    <div class="sky-content">
+
+        <div class="sky-heading">
+            <p class="eyebrow">BEYOND THE STARS</p>
+            <h2>The Royal Night Sky</h2>
+            <p>
+                A magical universe filled with stars,
+                dreams and endless possibilities.
+            </p>
+        </div>
+
+        <div class="moon-container">
+            <div class="moon">🌙</div>
+            <div class="moon-glow"></div>
+        </div>
+
+        <div class="sky-message">
+            <span>✦</span>
+            Even the darkest night has its stars.
+            <span>✦</span>
+        </div>
+
+        <button id="shootingStarButton" class="sky-button">
+            Make a Shooting Star ✨
+        </button>
+
+        <button id="skyBackButton" class="back-button">
+            ← Back to Music Room
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- PHASE 11 - ROYAL CROWN CAMERA -->
+
+<section id="cameraSection" class="camera-section">
+
+    <div class="camera-heading">
+        <p class="eyebrow">YOUR ROYAL MOMENT</p>
+        <h2>The Royal Crown Camera</h2>
+        <p>Wear your crown and discover your royal look.</p>
+    </div>
+
+    <div class="camera-container">
+
+        <div class="camera-frame">
+
+            <video id="cameraVideo"
+                   autoplay
+                   playsinline
+                   muted></video>
+
+            <canvas id="crownCanvas"></canvas>
+
+            <div id="cameraPlaceholder">
+                ♛
+                <p>Your royal camera awaits</p>
+            </div>
+
+        </div>
+
+        <div class="camera-controls">
+
+            <button id="startCameraButton">
+                Start Camera 📸
+            </button>
+
+            <button id="captureButton" disabled>
+                Capture Photo
+            </button>
+
+            <button id="stopCameraButton" disabled>
+                Stop Camera
+            </button>
+
+        </div>
+
+        <p id="cameraStatus">
+            Camera is currently off.
+        </p>
+
+        <a id="downloadPhoto" download="royal-photo.png"
+           hidden>
+            Download Your Royal Photo ✨
+        </a>
+
+    </div>
+
+    <button id="cameraBackButton" class="back-button">
+        ← Back to Night Sky
+    </button>
+
+</section>
+
+
+    <footer>
+        Made with magic <span>✦</span>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
